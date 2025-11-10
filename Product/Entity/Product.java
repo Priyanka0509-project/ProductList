@@ -16,7 +16,7 @@ public class Product {
     private Double price;
     private String description;
 
-    @ManyToOne(fetch = FetchType.LAZY)  // fetch have two options "EAGER" mtlb ani jode relation ma jetla bhi data hoy ane join kre mtlb table ma join kre jena lidhe  performance decrease thay and "LAZY" mtlb jena jode relation ma hoy data a badha ne join kre tables ma badha data ne join kre if need hoy badha data ni mtlb relation ma j data hoy jem k ama category and product chhe am to j use krvu
+    @ManyToOne(fetch = FetchType.LAZY)  
     @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 }
