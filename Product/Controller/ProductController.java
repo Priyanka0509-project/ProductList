@@ -16,7 +16,7 @@ import java.util.List;
         name = "Products REST API for CRUD Opertaion",
         description = "CREATE, READ, UPDATE, DELETE operation perform for Products"
 )
-@RestController // using this the return data will direct send to the HTTP server in JSON or XML formate
+@RestController 
 @RequestMapping("/api/products")
 @AllArgsConstructor
 public class ProductController {
